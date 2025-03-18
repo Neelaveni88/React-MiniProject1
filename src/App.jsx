@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Bookstall from './Home/AboutUs'
-import FurnitureShowroom from './Home/AboutUs'
+import "./App.css";
+import { Route, Routes } from "react-router";
 
+import Layout from "./layout/layout";
+import AboutUs from "./Home/AboutUs";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+      <div>
    
-    <FurnitureShowroom/>
+        <Routes>
+          <Route path="/" element={<Layout />} />
+          <Route element={<AboutUs />} />
+          {/* <AboutUs/> */}
+        </Routes>
+      
+      </div>
     </>
-  )
+  );
 }
 
 export default App;

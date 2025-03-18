@@ -8,7 +8,7 @@ import {
   Container,
 } from "@mui/material";
 
-const FurnitureShowroom = () => {
+const AboutUs = () => {
   return (
     <Container sx={{ padding: 1 }}>
       <Typography variant="h5" color="info" align="center" gutterBottom>
@@ -86,4 +86,4 @@ const FurnitureShowroom = () => {
   );
 };
 
-export default FurnitureShowroom;
+export default AboutUs;
