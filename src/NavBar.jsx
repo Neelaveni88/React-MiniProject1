@@ -81,7 +81,7 @@ function NavBar() {
             <Box
               sx={{
                 flexGrow: 1,
-                display: { xs: "none", md: "flex", justifyContent: "flex-end" },
+                display: { xs: "none", md: "flex", justifyContent: "flex-end",gap :'30px'},
               }}
             >
               {pages.map((page) => (
