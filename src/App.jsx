@@ -1,18 +1,18 @@
 import "./App.css";
-import { Route, Routes } from "react-router";
+import { Route, Routes } from "react-router-dom"; // Ensure you import from react-router-dom
 
-import Layout from "./layout/layout";
+import Layout from "./layout/Layout";
+import Product from "./product/Product";
+import HomePage from "./Home/HomePage";
+
 function App() {
   return (
-    <>
-      <div>
-   
-        <Routes>
-          <Route path="/" element={<Layout />} />
-        </Routes>
-      
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="/product" element={<Product />} />
+      </Route>
+    </Routes>
   );
 }
 
