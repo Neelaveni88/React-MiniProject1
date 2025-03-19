@@ -13,11 +13,8 @@ function App() {
         <Route path="/" element={<Layout/>}>
         <Route index element={<HomePage />} />
         <Route path="/gallery" element={<Gallery/>}/>
-<<<<<<< HEAD
-        <Route path="/Product" element={<Product/>}/>
-=======
+        <Route path="/product" element={<Product/>}/>
         <Route path="/to-do-list" element={<TodoList />} />
->>>>>>> 93be31f2f7e6ec19b83f86e22856ac53ff577bf2
       </Route>
     </Routes>
   );
