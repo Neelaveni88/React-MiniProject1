@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom"; // Ensure you import from reac
 
 
 import HomePage from "./Home/HomePage";
-import Layout from "./layout/layout";
 import Gallery from "./Gallery/Gallery";
+import Layout from "./layout/Layout";
 
 function App() {
   return (
