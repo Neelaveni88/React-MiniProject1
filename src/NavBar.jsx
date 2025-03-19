@@ -24,6 +24,7 @@ function NavBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -32,6 +33,7 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ backgroundColor: "blue" }}>
         <Toolbar disableGutters>
+          {/* Logo */}
           <Typography
             noWrap
             component="a"
@@ -93,7 +95,12 @@ function NavBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex", justifyContent: "flex-end" },
+              display: {
+                xs: "none",
+                md: "flex",
+                justifyContent: "flex-end",
+                gap: "30px",
+              },
             }}
           >
             {pages.map((page) => (
