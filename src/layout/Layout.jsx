@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "../NavBar";
 import Footer from "../Footer/Footer";
 import { Outlet } from "react-router";
-import AboutUs from "../Home/AboutUs";
+
 
 const Layout = () => {
   return (
