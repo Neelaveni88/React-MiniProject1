@@ -16,11 +16,17 @@ const AboutUs = () => {
       </Typography>
       <Grid container spacing={4} sx={{ marginTop: 2 }}>
         {/* Grid 1 */}
-        <Grid item xs={12} md={6} sx={{ display: "flex" }}>
+        <Grid item xs={12} md={6} sx={{ display: "flex"}}>
           <CardMedia
             component="img"
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsQEhAX3y4V6xV4wyCNeCA4OUgVZm_L7KoyA&s"
-            sx={{ height: "100%", objectFit: "cover" }}
+            sx={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: 0,
+                
+            }}
           />
         </Grid>
 
@@ -78,7 +84,13 @@ const AboutUs = () => {
           <CardMedia
             component="img"
             image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA0J1cCssLSepLcAx1_psTc9Ru6cZgU2o1cw&s"
-            sx={{ height: "100%", objectFit: "cover" }}
+            sx={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: 0,
+                
+            }}
           />
         </Grid>
       </Grid>
