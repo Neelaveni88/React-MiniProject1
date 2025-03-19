@@ -5,6 +5,7 @@ import HomePage from "./Home/HomePage";
 import TodoList from "./Home/TodoList";
 import Gallery from "./Gallery/Gallery";
 import Layout from "./layout/Layout";
+import Product from "./product/Product";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout/>}>
         <Route index element={<HomePage />} />
         <Route path="/gallery" element={<Gallery/>}/>
+        <Route path="/product" element={<Product/>}/>
         <Route path="/to-do-list" element={<TodoList />} />
       </Route>
     </Routes>
