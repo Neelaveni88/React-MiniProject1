@@ -11,7 +11,7 @@ import {
 const AboutUs = () => {
   return (
     <Container sx={{ padding: 1 }}>
-      <Typography variant="h5" color="info" align="center" gutterBottom>
+      <Typography variant="h5" color="info" align="center"padding={2} gutterBottom>
         Our Story
       </Typography>
       <Grid container spacing={4} sx={{ marginTop: 2 }}>
@@ -71,9 +71,10 @@ const AboutUs = () => {
                 Why Choose Us?
               </Typography>
               <Typography variant="body1">
-                * Premium materials and craftsmanship * Elegant and functional
-                designs * Customization options available * Expert customer
-                service
+                * Premium materials and craftsmanship 
+                * Elegant and functional designs 
+                * Customization options available 
+                * Expert customer service
               </Typography>
             </CardContent>
           </Box>

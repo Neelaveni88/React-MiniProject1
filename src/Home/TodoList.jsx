@@ -47,13 +47,12 @@ const TodoList = () => {
         backgroundSize: "cover",
         minHeight: "100vh",
         display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
+        paddingTop: "8%", 
       }}
     >
     <Container maxWidth="sm">
-     <Typography variant="h5" color="primary" align="center" padding={2} gutterBottom>
-        To-do List
+     <Typography variant="h5" color="error" align="center" padding={2} gutterBottom>
+        To-Do List
       </Typography>
       <Box style={{ display: "flex", marginBottom: 20 }}>
         <TextField

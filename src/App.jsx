@@ -1,5 +1,6 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom"; // Ensure you import from react-router-dom
+
 import HomePage from "./Home/HomePage";
 import TodoList from "./Home/TodoList";
 import Gallery from "./Gallery/Gallery";
