@@ -24,6 +24,7 @@ function NavBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
@@ -32,6 +33,7 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl" sx={{ backgroundColor: "blue" }}>
         <Toolbar disableGutters>
+          {/* Logo */}
           <Typography
             noWrap
             component="a"
@@ -60,50 +62,6 @@ function NavBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <img
-                src="https://tse3.mm.bing.net/th?id=OIP.T1Wt35ce0FqHrF1QAhryhQHaHa&pid=Api&P=0&h=180"
-                alt="logo"
-              />
-            </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-              <IconButton
-                size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
-                onClick={handleOpenNavMenu}
-                color="inherit"
-              >
-                <MenuIcon />
-              </IconButton>
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{ display: { xs: "block", md: "none" } }}
-              >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography sx={{ textAlign: "center" }}>{page}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box>
-            <Box
-              sx={{
-                flexGrow: 1,
-                display: { xs: "none", md: "flex", justifyContent: "flex-end",gap :'30px'},
-              }}
               <MenuIcon />
             </IconButton>
             <Menu
@@ -137,7 +95,12 @@ function NavBar() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "none", md: "flex", justifyContent: "flex-end" },
+              display: {
+                xs: "none",
+                md: "flex",
+                justifyContent: "flex-end",
+                gap: "30px",
+              },
             }}
           >
             {pages.map((page) => (
