@@ -15,6 +15,7 @@ const pages = [
   { name: "Home", path: "/" },
   { name: "Product", path: "/product" },
   { name: "Gallery", path: "/gallery" },
+  { name: "Services", path: "/services" },
   { name: "To-do-list", path: "/to-do-list" },
 ];
 
